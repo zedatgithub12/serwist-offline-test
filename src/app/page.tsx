@@ -17,7 +17,7 @@ export default function Page() {
         <Splash />
       ) : (
         <div className=" w-full h-screen flex items-center justify-center">
-          <p className="text-4xl ">👋 Hello I'm Home page</p>
+          <p className="text-4xl ">👋 Hello I&apos;m Home page</p>
         </div>
       )}
     </main>
