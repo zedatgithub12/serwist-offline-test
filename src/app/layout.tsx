@@ -1,12 +1,19 @@
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import './globals.css';
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Next PWA with Serwist Example',
-  description: 'An example of how to use Serwist in Next.js',
+  applicationName: "Hajj Travelers",
+  title: "Hajj Travelers",
+  description: "Hajji travelers ticket purchasing mini app",
+  manifest: "/web.manifest",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "Hajj Travelers",
+  },
 };
 
 export default function RootLayout({
