@@ -3,7 +3,7 @@ import { MetadataRoute } from "next";
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: "Offline-PWA",
-    short_name: "My PWA",
+    short_name: "Hajj PWA",
     description: "An example of how to use Serwist in Next.js",
     start_url: "/",
     display: "standalone",
