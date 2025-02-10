@@ -12,6 +12,9 @@ declare const self: ServiceWorkerGlobalScope & {
 const revision = crypto.randomUUID();
 
 installSerwist({
+  precacheOptions: {
+    ignoreURLParametersMatching: [/.*/],
+  },
   precacheEntries: self.__SW_MANIFEST,
   skipWaiting: true,
   clientsClaim: true,
@@ -23,7 +26,7 @@ installSerwist({
       handler: "CacheFirst",
       options: {
         cacheName: "next-static-files",
-        expiration: { maxEntries: 50, maxAgeSeconds: 60 * 60 * 24 * 20 }, 
+        expiration: { maxEntries: 50, maxAgeSeconds: 60 * 60 * 24 * 20 },
       },
     },
     {
