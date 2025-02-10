@@ -5,7 +5,7 @@ const withSerwist = withSerwistInit({
   swDest: "public/sw.js",
   swUrl: "/sw.js",
   cacheOnFrontEndNav: true,
-  additionalPrecacheEntries: [{ url: "/" }],
+
 });
 
 export default withSerwist({
